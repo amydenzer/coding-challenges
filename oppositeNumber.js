@@ -7,18 +7,18 @@
 // 14: -14
 // -34: 34
 
-//My attempt
+//first attempt
 
 function opposite(number) {
     return number * (-1);
 }
 
-//Best Practice
+//best practice
 function opposite(number) {
     return(-number);
   }
 
-//Voted next best practice
+//
 function opposite(number) {
     /* Now this is the story all about how
         My life got flipped, turned upside down
@@ -54,10 +54,10 @@ function opposite(number) {
     return number > 0 ? -number : Math.abs(number);
   }
 
-  //clever
+  //another best practice
   function opposite(n) {return -n}
 
-  //very long and complicated; not dry
+  //omg. why, just why?? 
   function opposite(number) {
     if (number === 0) {
       return 0;

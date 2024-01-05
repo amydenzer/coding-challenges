@@ -10,15 +10,17 @@
 
 // The size will always be positive and will only use whole numbers.
 
-function stringy(size){
-    let result = '';
-    for (let i = 0; i < size; i++) {
-      result += i % 2 === 0 ? '1' : '0';
-    }
-    return result;
+function stringy(size) {
+  // return string
+  let result = ''
+  // size of 6 should return: '101010'
+  // size will always be positive and only use whole numbers
+  for (let i = 0; i < size; i++){
+  // add 1 for 0 indices and 0 for odd indices  
+  result += i % 2 === 0 ? '1' : '0'
   }
-
-  console.log(stringy(6));
+  return result
+}
 
   //Other Solutions
   const stringy = x => ''.padStart(x,'10');

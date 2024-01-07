@@ -10,15 +10,17 @@
 
 // The size will always be positive and will only use whole numbers.
 
-  // return string
+
   // size of 6 should return: '101010'
   // size will always be positive and only use whole numbers
-  // add 1 for 0 indices and 0 for odd indices  
+  
 
 
 function stringy(size){
+    // return string
   let result =''
   for (let i = 0; i < size; i++){
+    // add 1 for 0 indices and 0 for odd indices
     result += i % 2 === 0 ? '1' : '0'
   }
   return result

@@ -11,14 +11,28 @@
 // "ACSKLDFJSGSKLDFJSKLDFJ" -> True
 
 //Solution
+function isAllCaps(str) {
+  return str === str.toUpperCase();
+}
+
+// Examples
+console.log(isAllCaps("c")); // False
+console.log(isAllCaps("C")); // True
+console.log(isAllCaps("hello I AM DONALD")); // False
+console.log(isAllCaps("HELLO I AM DONALD")); // True
+
+
+
+
+//Solution
 String.prototype.isUpperCase = function() {
-    for (let i = 0; i < this.length; i++) {
-      if (this[i] >= 'a' && this[i] <= 'z') {
-        return false
-      } 
+  for (let i = 0; i < this.length; i++) {
+    if (this[i] >= 'a' && this[i] <= 'z') {
+      return false
     } 
-    return true;
-  }
+  } 
+  return true;
+}
 
   //other solutions
   String.prototype.isUpperCase=function() {

@@ -11,26 +11,6 @@
 
 //My Solution:
 
-function disemvowel(str) {
-    // Use a regular expression to remove all vowels (both lowercase and uppercase)
-    // The regular expression /[aeiouAEIOU]/g matches any vowel character (case-insensitive)
-    // and the 'g' flag ensures that all occurrences are replaced.
-      return str.replace(/[aeiouAEIOU]/g, '');
-  }
-
-//   disemvowel("This website is for losers LOL!") ---> Ths wbst s fr lsrs LL!
-
-//others
-function disemvowel(str) {
-    return str.replace(/[aeiou]/gi, '');
-  }
-
-//others
-function disemvowel(str) {
-    return (str || "").replace(/[aeiou]/gi, "");
-  }
-
-//others
   const vowels = 'aeiou';
 
   function disemvowel(str) {

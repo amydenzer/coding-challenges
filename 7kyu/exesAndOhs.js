@@ -23,14 +23,16 @@ function XO(str) {
         oCount++;
       }
     }
-    
+  
     return xCount === oCount;
   }
+
 // Solution
 const XO = str => {
     str = str.toLowerCase().split('');
     return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
   }
+  
 // Solution
 function XO(str) {
     return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;

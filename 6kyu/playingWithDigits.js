@@ -56,3 +56,4 @@ Test.assertEquals(digPow(46288, 3), 51)
 
   });
 });
+

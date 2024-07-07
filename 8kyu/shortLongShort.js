@@ -19,7 +19,7 @@ function solution(a, b) {
       return b + a + b; 
     }
   }
-  
+
 // Best Practice
 function solution(a, b) {
     return a.length < b.length ? a + b + a : b + a + b

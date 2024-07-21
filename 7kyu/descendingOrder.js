@@ -1,12 +1,14 @@
 // Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
+// convert the integer to a string
+// convert the string to an array
 
 //mine
 function descendingOrder(n){
-    var result = n.toString().split('');
+    let result = n.toString().split('');
     
     // Sort the array in descending order
-    result.sort(function(a, b) { return b - a; });
+    result.sort((a, b) => b - a);
     
     // Join back into a string and use multiplication by 1 to convert to number
     return result.join('') * 1;
@@ -18,6 +20,8 @@ function descendingOrder(n){
 //12347254 =>75443221
 //41245 => 54421
 
+// Typescript
+const descendingOrder = (n: number): number => +[...n.toString()].sort((a, b) => +b - +a).join('');
 
 //best practice
 

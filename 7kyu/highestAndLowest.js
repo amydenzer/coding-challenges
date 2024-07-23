@@ -15,9 +15,13 @@ function highAndLow(numbers){
     const highest = Math.max(...numArray)
     const lowest = Math.min(...numArray)
     return highest + ' ' + lowest
-   
-   }
 
+   }
+  //  Solution
+   function highAndLow(numbers){
+    const numArray = numbers.split(' ')
+    return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+   }
 // Test
 const chai = require("chai");
 const assert = chai.assert;

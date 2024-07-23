@@ -31,6 +31,11 @@ function descendingOrder(n){
 
   const { assert } = require("chai")
 
+// another solution
+function descendingOrder(n){
+  return parseInt(n.toString().split('').sort().reverse().join(''), 10);
+}
+
 describe("Basic tests", () => {
   it("Testing for fixed tests", () => {
     assert.strictEqual(descendingOrder(0), 0)
